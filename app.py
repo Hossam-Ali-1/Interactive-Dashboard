@@ -2,10 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import kaleido
 import os
 from datetime import datetime
-from io import BytesIO
 
 # Configuration
 st.set_page_config(
@@ -17,7 +15,7 @@ st.set_page_config(
 
 # Internationalization
 def set_language():
-    lang = st.sidebar.radio("اللغة / Language", ["العربية", "English"])
+    lang = st.sidebar.radio("Language", ["English", "العربية"])
     return lang
 
 lang = set_language()
@@ -80,17 +78,9 @@ translations = {
         "العربية": "حفظ البيانات المصفاة",
         "English": "Save Filtered Data"
     },
-    "save_plot": {
-        "العربية": "حفظ الرسم البياني",
-        "English": "Save Plot"
-    },
     "waiting_file": {
         "العربية": "في انتظار رفع الملف...",
         "English": "Waiting for file upload..."
-    },
-    "kaleido_error": {
-        "العربية": "يجب تثبيت مكتبة kaleido لحفظ الرسومات. قم بتشغيل: pip install kaleido",
-        "English": "kaleido library required to save plots. Run: pip install kaleido"
     },
     "tabs": {
         "data": {
@@ -286,19 +276,6 @@ def main():
                 
                 if fig:
                     st.plotly_chart(fig, use_container_width=True)
-                    
-                    # Save plot button with kaleido check
-                    try:
-                        buf = BytesIO()
-                        fig.write_image(buf, format="png")
-                        st.download_button(
-                            label=translations["save_plot"][lang],
-                            data=buf,
-                            file_name=f"plot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png",
-                            mime="image/png"
-                        )
-                    except Exception as e:
-                        st.error(translations["kaleido_error"][lang])
                     
             except Exception as e:
                 st.error(f"Error generating plot: {str(e)}")

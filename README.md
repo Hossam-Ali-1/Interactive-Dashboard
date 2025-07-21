@@ -27,8 +27,8 @@ It is designed with **data analysts**, **non-technical users**, and **teams** in
 ✅ **Advanced visualizations** (Line, Bar, Scatter, Histogram, Box, Pie) via **Plotly Express**  
 ✅ **Export options:**  
 - Filtered data as `.csv`  
-- Charts as `.png` (via Kaleido) or `.html`  
-
+- Charts as `.png` (via Kaleido)
+  
 ---
 
 ## 🛠️ Tech Stack

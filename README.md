@@ -51,3 +51,8 @@ It is designed with **data analysts**, **non-technical users**, and **teams** in
  ├── app.py              # Main Streamlit app file
  ├── requirements.txt    # Python dependencies
  └── README.md           # Project documentation
+
+
+This version is **ready to paste into your README.md** — it has the link, the structure, and keeps the same clean style you had before.  
+
+Do you want me to also make a **short promotional version** for LinkedIn or GitHub description? That could help attract more users to click your app link.

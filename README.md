@@ -51,3 +51,5 @@ It is designed with **data analysts**, **non-technical users**, and **teams** in
  ├── app.py              # Main Streamlit app file
  ├── requirements.txt    # Python dependencies
  └── README.md           # Project documentation
+
+💡 If you enjoy this app, a ⭐ on GitHub would be awesome!

@@ -1,5 +1,7 @@
 # 📊 Interactive Data Dashboard | Streamlit Web App for Exploratory Data Analysis
 
+🔗 **Try the live app here:** [interactive-dashboard-app.streamlit.app](https://interactive-dashboard-app.streamlit.app/)
+
 An interactive, multilingual web application for uploading, analyzing, visualizing, and exporting structured datasets — built with **Streamlit**, **Plotly**, **Pandas**, and **NumPy**.
 
 ---
@@ -27,8 +29,8 @@ It is designed with **data analysts**, **non-technical users**, and **teams** in
 ✅ **Advanced visualizations** (Line, Bar, Scatter, Histogram, Box, Pie) via **Plotly Express**  
 ✅ **Export options:**  
 - Filtered data as `.csv`  
-- Charts as `.png` (via Plotly or Kaleido)
-  
+- Charts as `.png` (via Plotly or Kaleido)  
+
 ---
 
 ## 🛠️ Tech Stack
@@ -44,3 +46,8 @@ It is designed with **data analysts**, **non-technical users**, and **teams** in
 
 ## 📂 Project Structure
 
+```plaintext
+📂 interactive-data-dashboard/
+ ├── app.py              # Main Streamlit app file
+ ├── requirements.txt    # Python dependencies
+ └── README.md           # Project documentation
